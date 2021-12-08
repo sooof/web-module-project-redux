@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-import reducer from './reducers';
+
+import reducer from './reducers/movieReducer';
+// import rootReducer from './rootReducer';
 
 import App from './components/App';
 import { BrowserRouter as Router } from 'react-router-dom';
