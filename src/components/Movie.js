@@ -9,6 +9,7 @@ const Movie = (props) => {
     const { push } = useHistory();
     // console.log("Movie props", props, " id = ", id)
     // const movies = [];
+    
     const movie = props.movies.find(movie=>movie.id===Number(id));
 
     const handleDeleteMovie = () => {
