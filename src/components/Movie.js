@@ -57,7 +57,7 @@ const Movie = (props) => {
 const mapStateToProps = (state) => {
     // console.log("Movie currentState:", state)
     return {
-        movies: state.movies,
+        movies: state.movieReducer.movies,
     }
 }
 // export default Movie;
