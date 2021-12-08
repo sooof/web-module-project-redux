@@ -23,10 +23,8 @@ const AddMovieForm = (props) => {
         });
     }
 
+
     const handleSubmit = (e) => {
-        // props.addMovie(movie)
-    }
-    const handleAddMovie = (e) => {
         e.preventDefault()
         console.log("AddMovieForm handleAddMovie", movies)
         props.addMovie(movie)
@@ -66,7 +64,7 @@ const AddMovieForm = (props) => {
                         			
                     </div>
                     <div className="modal-footer">
-                        <input type="submit" onClick={handleAddMovie} className="btn btn-success" value="Add"/>
+                        <input type="submit"  className="btn btn-success" value="Add"/>
                         <Link to={`/movies`}><input type="button" className="btn btn-default" value="Cancel"/></Link>
                     </div>
                 </form>

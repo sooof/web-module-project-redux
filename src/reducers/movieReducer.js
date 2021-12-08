@@ -7,9 +7,9 @@ const initialState = {
 }
 
 const movieReducer = (state = initialState , action) => {
-    console.log("movieReducer.js mapStateToProps", state)
-    console.log("movieReducer.js mapStateToProps movies=", state.movies)
-    console.log("movieReducer.js mapStateToProps payload =", action.payload)
+    // console.log("movieReducer.js movieReducer", state)
+    // console.log("movieReducer.js movieReducer movies=", state.movies)
+    // console.log("movieReducer.js movieReducer payload =", action.payload)
     switch(action.type) {
         case DELETE_MOVIE:
             console.log("DELETE_MOVIE")
