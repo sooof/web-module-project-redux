@@ -5,7 +5,7 @@ import MovieListItem from './MovieListItem';
 import MovieFooter from './MovieFooter';
 
 const MovieList = (props)=> {
-    const movies = [];
+    // const movies = [];
 
     // console.log("MovieList props.movies", props.movies)
 
@@ -29,7 +29,7 @@ const MovieList = (props)=> {
                 </tbody>
             </table>
             
-            <MovieFooter totalMovies={movies.length}/>
+            <MovieFooter totalMovies={props.movies.length}/>
         </div>
     );
 }
@@ -38,7 +38,6 @@ const mapStateToProps = (state) => {
     // console.log("MovieList currentState:", state)
     return {
         movies: state.movies,
-        appTitle: state.movies
     }
 }
 
